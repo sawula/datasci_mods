@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# retrieve notebooks and place correctly in session
+rm index.ipynb
+git clone https://github.com/sawula/datasci_mods_content.git
+cp datasci_mods_content/index.ipynb .
+mv datasci_mods_content/notebooks .
+rm -rf datasci_mods_content
+
 /usr/bin/Xvfb :0 -screen 0 1024x768x24 &
 export DISPLAY=":0"
 exec "$@"
