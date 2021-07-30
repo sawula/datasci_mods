@@ -1,24 +1,15 @@
-  
 channels:
   - conda-forge
 dependencies:
   - python=3.8
-  - altair
   - cairo
   - cairosvg
   - jedi=0.17.2
   - jupyterlab
   - line_profiler
-  - keras
   - matplotlib
-  - numpy
   - noise
   - pandas
-  - scikit-learn
-  - seaborn
-  - statsmodels
-  - vega_datasets
   - pip
   - pip:
     - py5
-    - autokeras
